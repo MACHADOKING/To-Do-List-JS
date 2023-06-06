@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do List</title>
+    <script
+      src="https://kit.fontawesome.com/6037d030f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./scripts.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header><h2>To-Do List</h2></header>
+      <div class="inputs-submits">
+        <div class="task-add">
+          <h3>Insira uma Tarefa:</h3>
+          <div class="form-add-task">
+            <input
+              type="text"
+              id="input-add-task"
+              placeholder="Insira uma tarefa..."
+            />
+            <button id="add-task-button">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="search-filter-form">
+          <div class="form-search">
+            <h3>Pesquisar:</h3>
+            <div class="form-search-task">
+              <input
+                type="search"
+                id="input-search-task"
+                placeholder="Pesquisar..."
+              />
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </div>
+          <div class="form-filter">
+            <h3>Filtrar:</h3>
+            <select class="select-filter">
+              <option>Todos</option>
+              <option>Finalizados</option>
+              <option>Pendentes</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="edit-tasks hide">
+        <h3>Edite a Task:</h3>
+        <div class="form-edit-task">
+          <input type="text" id="input-edit-task" placeholder="" />
+          <button id="edit-form-button">
+            <i class="fa-solid fa-check"></i>
+          </button>
+        </div>
+        <button class="cancel-edit-button">Cancelar</button>
+      </div>
+      <div class="tasks-form">
+        <!-- <div class="task-single">
+          <p>Teste</p>
+          <div class="buttons-task">
+            <button class="check-button">
+              <i class="fa-solid fa-check-double"></i>
+            </button>
+            <button class="edit-button">
+              <i class="fa-solid fa-pencil"></i>
+            </button>
+            <button class="delete-button">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>
